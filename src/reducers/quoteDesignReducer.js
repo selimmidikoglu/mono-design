@@ -4,9 +4,10 @@ let initialState = {
     textColor: 'blue',
     textFontFamily : '',
     textStyle: '',
-    textWidth: '',
-    textHeight: '',
-    textAlign : 'center'
+    textWidth: 200,
+    textHeight: 0,
+    textAlign : 'center',
+    textFontSize: 20
 
 }
 
@@ -31,6 +32,8 @@ export default quoteDesignReducer = (state = initialState, action) => {
         case "CHANGE_TEXT_HEIGHT":
             state = {...state,textHeight:action.payload};
             return state;
+        case "CHANGE_FONT_SIZE":
+            state = {...state,textFontSize:action.payload};
         default:
             return state;
     }

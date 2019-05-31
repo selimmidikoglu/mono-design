@@ -10,6 +10,7 @@ import IconMat from 'react-native-vector-icons/MaterialCommunityIcons';
 import dimensionsObj from '../dimensions';
 //static components(almost)
 import TextHeightBar from './textHeightBar';
+import TextWidthBar from './textWidthBar';
 //redux
 import { connect } from 'react-redux';
 //actions
@@ -30,8 +31,10 @@ class DesignBox extends Component{
         if(!this.props.renderOrNotReducer.renderTextDesignBar)
             return null;
         else{
-            if(this.props.designBoxReducer.sliderHeightOpened)
+            if(this.props.designBoxReducer.sliderHeightOpened && !this.props.designBoxReducer.sliderWidthOpened)
                 return <TextHeightBar/>;
+            else if(this.props.designBoxReducer.sliderWidthOpened && !this.props.designBoxReducer.sliderHeightOpened)
+                return <TextWidthBar/>
             else
                 return(
                     <View style={[styles.container]}>
@@ -131,7 +134,10 @@ const styles = StyleSheet.create({
         justifyContent: 'flex-end',
         height: dimensionsObj.designBoxHeight, 
         width: dimensionsObj.designBoxWidth,
-        backgroundColor: 'black', 
+        backgroundColor: 'rgba(0,0,0,.7)',
+        borderRadius: 10,
+        zIndex:1,
+        position:'absolute' 
     },
     fontsBar: {
         flex:3,

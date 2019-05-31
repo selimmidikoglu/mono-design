@@ -7,6 +7,7 @@ import dimensionsObj from '../dimensions';
 import IconSimple from 'react-native-vector-icons/SimpleLineIcons';
 //@actions
 import {openSliderWidth} from '../src/actions/designBoxActions';
+import {changeTextWidth} from '../src/actions/quoteDesignActions';
 class TextWidthBar extends Component {
   render () {
     return (
@@ -35,10 +36,11 @@ class TextWidthBar extends Component {
         </View>
         <View style={{flex: 3, alignItems: 'center'}}>
           <Slider
+            onValueChange={(value) => this.props.changeTextWidth(value)}
             minimumTrackTintColor="red"
             maximumTrackTintColor="green"
-            minimumValue={10}
-            maximumValue={150}
+            minimumValue={200}
+            maximumValue={dimensionsObj.width}
             style={{height: 50,width: dimensionsObj.designBoxWidth-20}}
           />
         </View>
@@ -52,11 +54,15 @@ const styles = StyleSheet.create ({
   container: {
     height: dimensionsObj.designBoxHeight,
     width: dimensionsObj.designBoxWidth,
-    backgroundColor: 'rgba(0,0,0,1)',
+    backgroundColor: 'rgba(0,0,0,.8)',
+    borderRadius: 10,
+    zIndex:1,
+    position:'absolute',
+    marginBottom:10
   },
 });
 
 mapStateToProps = (state) => {
   return state
 }
-export default connect(mapStateToProps,{openSliderWidth})(TextWidthBar);
+export default connect(mapStateToProps,{changeTextWidth,openSliderWidth})(TextWidthBar);

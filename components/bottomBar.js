@@ -34,7 +34,7 @@ class BottomBar extends Component {
                         </View>
                         <View style={styles.button}>
                             <TouchableOpacity>
-                                <IconMat name="format-text" style={styles.icon} size={dimensionsObj.designBarButtonHeight-10}/>
+                                <IconMat name="format-textbox" style={styles.icon} size={dimensionsObj.designBarButtonHeight-10}/>
                             </TouchableOpacity>
                         </View>
                         <View style={styles.button}>
@@ -77,7 +77,10 @@ const styles = StyleSheet.create({
         flexDirection:'column',
         height:dimensionsObj.designBarHeight,
         width:dimensionsObj.designBarWidth,
-        backgroundColor: 'black'
+        backgroundColor: 'rgba(0,0,0,.7)',
+        borderRadius: 10,
+        zIndex:1,
+        position:'absolute'
     },
     row :{
         flexDirection:'row',
@@ -89,8 +92,6 @@ const styles = StyleSheet.create({
         height: dimensionsObj.designBarButtonHeight,
         alignItems: 'center',
         justifyContent:'center',
-        borderColor: 'white',
-        borderWidth: 1,
     },
     icon :{
          color:'white',

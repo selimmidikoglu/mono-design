@@ -20,7 +20,7 @@ export const changeColor = (color) => {
     }
 }
 
-export const changeFontWidth =  (width) => {
+export const changeTextWidth =  (width) => {
     return  {
         type: "CHANGE_TEXT_WIDTH",
         payload: width
@@ -38,5 +38,12 @@ export const changeTextStyle =  (style) => {
     return  {
         type: "CHANGE_FONT_STYLE",
         payload: style
+    }
+}
+
+export const changeFontSize=  (fontSize) => {
+    return  {
+        type: "CHANGE_FONT_SIZE",
+        payload: fontSize
     }
 }

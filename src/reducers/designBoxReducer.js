@@ -45,7 +45,7 @@ export default quoteDesignReducer = (state = initialState, action) => {
             return state;
 
         case "OPEN_CLOSE_SLIDER_WIDTH":
-            if(state.sliderHeightOpened === false)
+            if(state.sliderWidthOpened == false)
                 state = {...state,sliderWidthOpened: true};
             else
                 state = {...state,sliderWidthOpened: false};
