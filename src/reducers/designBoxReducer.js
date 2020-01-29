@@ -1,7 +1,12 @@
+
+
 let initialState = {
     selectedFont:'Montserrat-Regular',
     textAlignLogo: ['white','white','white'],
     fontStyleLogo: ['white','white','white'],
+    boldColor: 'white',
+    italicColor: 'white',
+    underlineColor : 'white',
     sliderHeightOpened : false,
     sliderWidthOpened : false
 }
@@ -27,13 +32,25 @@ export default quoteDesignReducer = (state = initialState, action) => {
         
         case "CHANGE_STYLE_ICON":
             if(action.payload === 0){
-                state = {...state,fontStyleLogo:['#37474f','white','white']};
+                if(state.boldColor === 'white')
+                    state = {...state,boldColor:'#37474f'};
+                else
+                    state = {...state,boldColor:'white'};
+                return state;
             }
             else if(action.payload === 1){
-                state = {...state,fontStyleLogo:['white','#37474f','white']};
+                if(state.italicColor === 'white')
+                    state = {...state,italicColor:'#37474f'};
+                else
+                    state = {...state,italicColor:'white'};
+                return state;
             }
-            else {
-                state = {...state,fontStyleLogo:['white','white','#37474f']};
+            else if(action.payload === 2) {
+                if(state.underlineColor === 'white')
+                    state = {...state,underlineColor:'#37474f'};
+                else
+                    state = {...state,underlineColor:'white'};
+                return state;
             }
             return state;
 

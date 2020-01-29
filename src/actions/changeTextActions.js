@@ -4,3 +4,8 @@ export const changeText =  (text) => {
         payload: text
     }
 }
+export const changeCase =  () => {
+    return  {
+        type: "CHANGE_CASE",
+    }
+}

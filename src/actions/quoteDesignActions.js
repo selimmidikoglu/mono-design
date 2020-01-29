@@ -1,9 +1,8 @@
 
-
-export const changeFontFamily =  (newFontFamily) => {
+export const changeFontFamily =  (index) => {
     return  {
         type: "CHANGE_FONT_FAMILY",
-        payload: newFontFamily
+        payload: index
     }
 }
 
@@ -36,7 +35,7 @@ export const changeFontHeight =  (height) => {
 
 export const changeTextStyle =  (style) => {
     return  {
-        type: "CHANGE_FONT_STYLE",
+        type: "CHANGE_TEXT_STYLE",
         payload: style
     }
 }
@@ -45,5 +44,24 @@ export const changeFontSize=  (fontSize) => {
     return  {
         type: "CHANGE_FONT_SIZE",
         payload: fontSize
+    }
+}
+
+export const changeTextUnderline = () => {
+    return {
+        type: "CHANGE_FONT_UNDERLINE"
+    }
+}
+
+export const changeTextAccessibility = (index) => {
+    return {
+        type: "CHANGE_TEXT_STYLE_ACCESIBILITY",
+        payload: index
+    }
+}
+
+export const changeLetterCase = () => {
+    return {
+        type: "CHANGE_LETTER_CASE",
     }
 }

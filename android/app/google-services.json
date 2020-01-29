@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "853035116086",
+    "firebase_url": "https://monodesign-41024.firebaseio.com",
+    "project_id": "monodesign-41024",
+    "storage_bucket": "monodesign-41024.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853035116086:android:1740aad0e89a168e",
+        "android_client_info": {
+          "package_name": "com.Gaban.MonoDesign"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853035116086-3kjagg9rt7jjfl07e0cqai6oehhn9048.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2zcfgZkjFJxpngFBQLt4rZfU_R2hYAtA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853035116086-3kjagg9rt7jjfl07e0cqai6oehhn9048.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853035116086:android:44c0916e2b69407c",
+        "android_client_info": {
+          "package_name": "com.findquotesharequoteapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853035116086-3kjagg9rt7jjfl07e0cqai6oehhn9048.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2zcfgZkjFJxpngFBQLt4rZfU_R2hYAtA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853035116086-3kjagg9rt7jjfl07e0cqai6oehhn9048.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
