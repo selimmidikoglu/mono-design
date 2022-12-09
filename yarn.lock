@@ -761,29 +761,6 @@
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/@react-native-community/slider/-/slider-1.1.4.tgz#ff7438afbc194d61f397e9258d78941c014ac110"
 
-"@react-native-firebase/analytics@^0.0.26":
-  version "0.0.26"
-  resolved "https://registry.yarnpkg.com/@react-native-firebase/analytics/-/analytics-0.0.26.tgz#be8f0249a5acd3c238c229985e4f18b69f230ae3"
-  dependencies:
-    "@react-native-firebase/app-types" "0.0.26"
-    "@react-native-firebase/common" "0.0.26"
-
-"@react-native-firebase/app-types@0.0.26":
-  version "0.0.26"
-  resolved "https://registry.yarnpkg.com/@react-native-firebase/app-types/-/app-types-0.0.26.tgz#70499ee68f5f3807370b994e352fbc207e99512f"
-
-"@react-native-firebase/app@^0.0.26":
-  version "0.0.26"
-  resolved "https://registry.yarnpkg.com/@react-native-firebase/app/-/app-0.0.26.tgz#c068774042986d766898da8cfaefba2705a77bec"
-  dependencies:
-    "@react-native-firebase/app-types" "0.0.26"
-    "@react-native-firebase/common" "0.0.26"
-    opencollective-postinstall "^2.0.1"
-
-"@react-native-firebase/common@0.0.26":
-  version "0.0.26"
-  resolved "https://registry.yarnpkg.com/@react-native-firebase/common/-/common-0.0.26.tgz#3df21a8eaf1a37ab66af13fa1af47c2f70dcfb30"
-
 "@react-navigation/core@~3.4.1":
   version "3.4.2"
   resolved "https://registry.yarnpkg.com/@react-navigation/core/-/core-3.4.2.tgz#bec563e94fde40fbab3730cdc97f22afbb2a1498"
@@ -3991,7 +3968,7 @@ onetime@^2.0.0:
   dependencies:
     mimic-fn "^1.0.0"
 
-opencollective-postinstall@^2.0.0, opencollective-postinstall@^2.0.1:
+opencollective-postinstall@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/opencollective-postinstall/-/opencollective-postinstall-2.0.2.tgz#5657f1bede69b6e33a45939b061eb53d3c6c3a89"
 
@@ -4315,8 +4292,8 @@ punycode@^2.1.0, punycode@^2.1.1:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.1.1.tgz#b58b010ac40c22c5657616c8d2c2c02c7bf479ec"
 
 qs@~6.5.2:
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.3.tgz#3aeeffc91967ef6e35c0e488ef46fb296ab76aad"
 
 query-string@^6.4.2:
   version "6.8.1"
@@ -4405,9 +4382,9 @@ react-native-elements@^1.1.0:
     react-native-ratings "^6.3.0"
     react-native-status-bar-height "^2.2.0"
 
-react-native-firebase@^5.5.4:
-  version "5.5.4"
-  resolved "https://registry.yarnpkg.com/react-native-firebase/-/react-native-firebase-5.5.4.tgz#1c71d2b21a11fdb5177f7e7c05c8bf3130fb88d7"
+react-native-firebase@~5.5.4:
+  version "5.5.7"
+  resolved "https://registry.yarnpkg.com/react-native-firebase/-/react-native-firebase-5.5.7.tgz#d03d69c774af280c80c63bede59f65c5f7e8f26c"
   dependencies:
     opencollective-postinstall "^2.0.0"
     prop-types "^15.7.2"
